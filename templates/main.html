@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <title>LearnBro - Connect & Learn!</title>
+  </head>
+
+  <body>
+   
+    {% include 'navbar.html' %}
+    {% if messages%}
+    <div class="message-container"> 
+      <ul class="messages">
+          {% for message in messages  %}
+              <li>{{message}}</li>
+          {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <style>
+        /* Alert messages */
+        .message-container{
+          display: block;
+          position: relative;
+          margin: auto;
+          z-index: 1;
+          width: fit-content;
+          padding: 1%;
+          background: rgba(255, 0, 0, 1);
+          border-radius: 5px;
+          box-shadow: 0 5px 5px 3px #00000069;
+
+        }
+        ul,li{
+          text-decoration: none;
+          list-style: none;
+          outline: none;
+          border: none;
+        }
+        .messages{
+          text-align: center;
+          color: #fff;
+          font-weight: 700;
+        }
+    </style>
+  </body>
+</html>
+
+
+
+
