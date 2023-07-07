@@ -12,9 +12,14 @@
 ## Before getting started:
 
 1.  Before running anything, activate virtual environment using  `myEnv/Scripts/activate `
-2.  create django project by `django-admin startproject learnbro`
-3.  then run server using `python manage.py runserver`
-4.  `python -m pip install djangorestframework`
+2.  Created django project by `django-admin startproject learnbro`
+3.  Add superuser `python .\manage.py createsuperuser`
+4.  After creating models, and views: `python .\manage.py makemigrations` then `python .\manage.py migrate`
+5.  `python manage.py startapp base`
+6.  `python -m pip install djangorestframework`
+7.  `python -m pip install django-cors-headers`
+8.  `python -m pip install pillow`
+9.  Finally run server using `python manage.py runserver`
 
 ## Tools:
 
