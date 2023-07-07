@@ -18,7 +18,7 @@
 
 ## Tools:
 
-1. Python
+1. Python, HTML, CSS, JavaScript
 2. Django framework
 3. Django REST for APIs
 4. Pillow for handling images in database
