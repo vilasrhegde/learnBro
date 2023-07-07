@@ -11,7 +11,7 @@
 
 ## Before getting started:
 
-1.  Before running anything, activate virtual environment using  `myEnv/Scripts/activate `
+1.  Before running anything, activate virtual environment using  `myEnv/Scripts/activate `, this was made using `virtualenv base` (base is the name given to my virtual environment). So to use this you need to install `pip install virtualenv`
 2.  Created django project by `django-admin startproject learnbro`
 3.  Add superuser `python .\manage.py createsuperuser`
 4.  After creating models, and views: `python .\manage.py makemigrations` then `python .\manage.py migrate`
